@@ -1,0 +1,12 @@
+<div ng-include="'views/_nav.html'"></div>
+<button ng-click="newItem()">New</button>
+<ul>
+    <li ng-repeat="(idx, value) in barangs">
+        Id: {{value.Id}} <br/>
+        Nama: {{value.Nama}} <br/>
+        Stock: {{value.Stock}} <br/>
+        Keterangan: {{value.Keterangan}} <br/>
+        ActionL <button ng-click="detailItem(idx, value)">Detail</button>
+        <button ng-click="editItem(idx, value)">Edit</button>
+    </li>
+</ul>

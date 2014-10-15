@@ -1,0 +1,13 @@
+<div ng-include="'views/_nav.html'"></div>
+
+<ul>
+    <li>
+        Id: <input type="text" ng-model="selectedbarang.Id" disabled/><br/>
+        Nama: <input type="text" ng-model="selectedbarang.Nama"/> <br/>
+        Stock: <input type="number" ng-model="selectedbarang.Stock"/> <br/>
+        Keterangan: <input type="text" ng-model="selectedbarang.Keterangan"/> <br/>
+        Action: <button ng-click="back()">Back</button>
+        <button ng-click="updateItem()">Update</button>
+
+    </li>
+</ul>
